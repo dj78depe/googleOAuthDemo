@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GoogleOAuthDemo
 This basic web application built using Spring Boot demonstrates Authentication and Authorization using OAuth 2.0 and OIDC standards for Single Sign On (SSO). Here the Authorization- & Request server are from Google and hence Google accounts are required to evaluate and ascertain the OAuth service.
 
@@ -42,3 +43,7 @@ To RUN the project as DOCKER, follow:
 #### URL Mapping - /public & /restricted
 * **http://localhost:<port>/public** would return the real time Date/Time of the machine without need of authorization
 * **http://localhost:<port>/restricted** would return the User Name, Profile Picture, Email address of the logged in Google user upon successful authorization by Google server.
+=======
+# googleOAuthDemo
+Demonstrates authentication and authorization of a Single Sign On (SSO) of a sample web application built using spring Boot. Here, the Authorization- &amp; Request servers are from Google and hence Google accounts are required to evaluate and ascertain the OAuth service.
+>>>>>>> 57f19ba04cf06b58004f12e650bab1a8f4a1caeb
