@@ -40,5 +40,5 @@ To RUN the project as DOCKER, follow:
 ``` docker run -p 4000:8080 <taggedImageName> ``` (where 4000 is the port of the machine where Docker is hosted and 8080 is the port of the SSO web application. In other words web app can be accessed via 4000 port.)
 
 #### URL Mapping - /public & /restricted
-* **http://localhost:<port>/public** would return the real time Date/Time of the machine without need of authorization
-* **http://localhost:<port>/restricted** would return the User Name, Profile Picture, Email address of the logged in Google user upon successful authorization by Google server.
+* **http://localhost:port_no/public** would return the real time Date/Time of the machine without need of authorization
+* **http://localhost:port_no/restricted** would return the User Name, Profile Picture, Email address of the logged in Google user upon successful authorization by Google server.
