@@ -13,9 +13,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
+	
+	/*
+	 * URL-mapping: [/] accessible public without any authentication
+	 */
+	@GetMapping("/")
+	public String homePageTest() {
+
+		return "Welcome to the GoogleOAuthDemoApplication";
+	}
 
 	/*
-	 * URL-mapping: /public accessible public without any authentication
+	 * URL-mapping: [/public] accessible public without any authentication
 	 */
 	@GetMapping("/public")
 	public String test1() {
@@ -28,7 +37,7 @@ public class TestController {
 	}
 
 	/*
-	 * URL-mapping: /restricted accessible only upon authentication by Google
+	 * URL-mapping: [/restricted] accessible only upon authentication by Google
 	 * account
 	 */
 	@GetMapping("/restricted")
